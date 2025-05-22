@@ -1,6 +1,6 @@
 
 
-import pfp1 from '../assets/pfp1.png';
+import pfp1 from '../assets/images/pfp1.png';
 
 import React, { useState, useEffect } from 'react';
 import { FaYoutube, FaLinkedin } from 'react-icons/fa';

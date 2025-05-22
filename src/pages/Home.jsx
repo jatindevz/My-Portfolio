@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
-import pfp1 from '../assets/pfp1.png';
+import pfp1 from '../assets/images/pfp1.png';
 
 const Home = () => {
   const typedTextRef = useRef(null);
