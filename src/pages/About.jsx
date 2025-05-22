@@ -1,5 +1,6 @@
 
 
+import pfp1 from '../assets/pfp1.png';
 
 import React, { useState, useEffect } from 'react';
 import { FaYoutube, FaLinkedin } from 'react-icons/fa';
@@ -66,7 +67,7 @@ const About = () => {
                 <div className="w-48 h-48 md:w-64 md:h-64 overflow-hidden rounded-2xl border-4 border-white/30 shadow-lg mb-6 group">
                   <div className="relative h-full">
                     <img 
-                      src="src/assets/images/pfp.png" 
+                      src= {pfp1} 
                       alt="Jatin Patil" 
                       className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
                     />
