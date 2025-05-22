@@ -46,7 +46,9 @@ const ProjectCard = ({ title, description }) => (
     <p className="text-gray-700 dark:text-gray-300">{description}</p>
     <div className="mt-4">
       <button className="flex items-center text-sm font-medium text-purple-700 dark:text-purple-400 hover:text-purple-900 dark:hover:text-purple-300 transition-colors">
-        <span>Learn More</span>
+      <a href="https://github.com/jatindevz" target="_blank" rel="noopener noreferrer">
+        <span>Visit</span>
+      </a>
         <MoveUpRight className="w-3 h-3 ml-1" />
       </button>
     </div>

@@ -30,7 +30,7 @@ const Home = () => {
       <div className="h-full flex flex-col justify-center pl-6 sm:pl-12 md:pl-24 lg:pl-32 relative z-10">
         {/* Heading */}
         <h2
-          className={`text-4xl sm:text-5xl font-extrabold mb-3 text-gray-900 dark:text-white transition-all duration-700 ${
+          className={`text-4xl sm:text-5xl font-extrabold mb-3 text-gray-900 dark:text-white transition-all duration-150 ${
             isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-12 opacity-0'
           }`}
         >
@@ -39,7 +39,7 @@ const Home = () => {
 
         {/* Typing text */}
         <h1
-          className={`text-3xl sm:text-4xl font-bold mb-6 text-gray-700 dark:text-gray-300 transition-all duration-700 delay-100 ${
+          className={`text-3xl sm:text-4xl font-bold mb-6 text-gray-700 dark:text-gray-300 transition-all duration-300 delay-100 ${
             isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-12 opacity-0'
           }`}
         >
@@ -48,7 +48,7 @@ const Home = () => {
 
         {/* Bio */}
         <p
-          className={`max-w-md text-lg font-light mb-8 text-gray-600 dark:text-gray-400 transition-all duration-700 delay-200 ${
+          className={`max-w-md text-lg font-light mb-8 text-gray-600 dark:text-gray-400 transition-all duration-450 delay-200 ${
             isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-12 opacity-0'
           }`}
         >
@@ -57,7 +57,7 @@ const Home = () => {
 
         {/* Action Buttons */}
         <div
-          className={`flex space-x-4 transition-all duration-700 delay-300 ${
+          className={`flex space-x-4 transition-all duration-600 delay-300 ${
             isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-12 opacity-0'
           }`}
         >
@@ -76,7 +76,7 @@ const Home = () => {
 
       {/* Profile Image */}
       <div
-        className={`absolute right-12 z-10 lg:right-24 bottom-1/2 transform translate-y-1/2 w-72 h-96 rounded-2xl overflow-hidden border-4 border-indigo-500 shadow-xl transition-all duration-700 delay-300 ${
+        className={`absolute right-12 z-10 lg:right-24 bottom-1/2 transform translate-y-1/2 w-72 h-96 rounded-2xl overflow-hidden border-4 border-indigo-500 shadow-xl transition-all duration-500 delay-100 ${
           isLoaded ? 'translate-x-0 opacity-100' : 'translate-x-12 opacity-0'
         }`}
       >

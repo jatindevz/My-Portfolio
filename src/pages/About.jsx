@@ -15,7 +15,7 @@ const About = () => {
   return (
     <div className="min-h-screen pt-24 px-4 bg-gradient-to-b from-gray-50 to-purple-50 dark:from-gray-900 dark:to-purple-950 pb-10">
       <div 
-        className={`max-w-5xl mx-auto w-full transform transition-all duration-700 ${
+        className={`max-w-5xl mx-auto w-full transform transition-all duration-500 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
         }`}
       >
@@ -34,9 +34,9 @@ const About = () => {
                 <div className="flex items-center justify-between">
                   <h2 className="text-3xl md:text-4xl font-bold">Jatin Patil</h2>
                   <div className="hidden sm:flex space-x-4">
-                    <SocialButton icon={<FaLinkedin className="w-5 h-5" />} label="LinkedIn" />
-                    <SocialButton icon={<Twitter className="w-5 h-5" />} label="Twitter" />
-                    <SocialButton icon={<Github className="w-5 h-5" />} label="Github" />
+                    <SocialButton icon={<FaLinkedin className="w-5 h-5" />} label="LinkedIn" link="https://www.linkedin.com/in/jatin-patil-31075b259/" />
+                    <SocialButton icon={<Twitter className="w-5 h-5" />} label="Twitter" link="https://x.com/jatinnvw"/>
+                    <SocialButton icon={<Github className="w-5 h-5" />} label="Github" link="https://github.com/jatindevz"/>
                   </div>
                 </div>
                 
@@ -85,7 +85,8 @@ const About = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <ProjectCard 
                 title="Nike Shoe Store" 
-                description="An e-commerce platform for buying Nike shoes."                
+                description="An e-commerce platform for buying Nike shoes."       
+                link = "https://e-com-web-page-fe.vercel.app/"         
               />
               {/* <ProjectCard 
                 title="Algorithm Masterclass" 
@@ -108,10 +109,11 @@ const AchievementItem = ({ text }) => (
   </li>
 );
 
-const SocialButton = ({ icon, label }) => (
-  <button className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200 text-white flex items-center space-x-2">
+const SocialButton = ({ icon, label,link }) => (
+  <button className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200 text-white flex items-center space-x-2" onClick={() => window.open(link, '_blank')}>
     {icon}
     {label && <span className="text-sm hidden md:inline">{label}</span>}
+    
   </button>
 );
 
@@ -122,13 +124,15 @@ const ContactButton = () => (
   </button>
 );
 
-const ProjectCard = ({ title, description }) => (
+const ProjectCard = ({ title, description,link }) => (
   <div className="bg-purple-50 dark:bg-gray-700/30 rounded-xl p-5 hover:shadow-md transition-all border border-transparent hover:border-purple-200 dark:hover:border-purple-800">
     <h4 className="font-bold text-lg text-purple-900 dark:text-purple-300 mb-2">{title}</h4>
     <p className="text-gray-700 dark:text-gray-300">{description}</p>
     <div className="mt-4">
-      <button className="flex items-center text-sm font-medium text-purple-700 dark:text-purple-400 hover:text-purple-900 dark:hover:text-purple-300 transition-colors">
-        <span>Learn More</span>
+      <button className="flex items-center text-sm font-medium text-purple-700 dark:text-purple-400 hover:text-purple-900 dark:hover:text-purple-300 transition-colors" >
+      <a href= {link} target="_blank" rel="noopener noreferrer">
+        <span>Visit</span>
+      </a>
         <MoveUpRight className="w-3 h-3 ml-1" />
       </button>
     </div>
