@@ -81,7 +81,7 @@ const Home = () => {
         }`}
       >
         <img
-          src="src/assets/images/pfp.png"
+          src="src/assets/images/pfp1.png"
           alt="Jatin Patil"
           className="w-full h-full object-cover"
         />
