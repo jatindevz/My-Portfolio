@@ -76,8 +76,8 @@ const Home = () => {
       </div>
 
       {/* Profile Image */}
-      <div
-        className={`absolute right-12 z-10 lg:right-24 bottom-1/2 transform translate-y-1/2 w-72 h-96 rounded-2xl overflow-hidden border-4 border-indigo-500 shadow-xl transition-all duration-500 delay-100 ${
+      <div 
+        className={` hidden md:block absolute right-12 z-10 lg:right-24 bottom-1/2 transform translate-y-1/2 w-72 h-96 rounded-2xl overflow-hidden border-4 border-indigo-500 shadow-xl transition-all duration-500 delay-100 ${
           isLoaded ? 'translate-x-0 opacity-100' : 'translate-x-12 opacity-0'
         }`}
       >

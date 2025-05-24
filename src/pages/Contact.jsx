@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Mail, Phone, MapPin, MoveUpRight } from 'lucide-react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser'; // ✅ FIXED
 
 
 const Contact = () => {
@@ -16,7 +16,7 @@ const Contact = () => {
 
     emailjs.sendForm(
       'service_u23g9if',
-      'template_8z7w6bq',
+      'template_7nl7alp', // ✅ USE CORRECT TEMPLATE
       formRef.current,
       'DYnCEPGOk9OU644Qw'
     ).then(
@@ -25,6 +25,7 @@ const Contact = () => {
         formRef.current.reset();
       },
       (error) => {
+        console.error('EmailJS Error:', error); // ✅ DEBUG HELP
         alert("Something went wrong. Please try again.");
       }
     );
